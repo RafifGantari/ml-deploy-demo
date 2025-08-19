@@ -3,12 +3,11 @@ This project demonstrates how to build, train, and deploy a Machine Learning mod
 The model used in this project is a Gradient Boosting Regressor, exported with joblib for deployment.
 
 ## Project Structure
-├── test1.ipynb          # Jupyter Notebook for data preprocessing, training, and evaluation  
-├── testing_deploy.py    # Flask API script for model deployment  
-├── gbr_model.joblib     # Trained machine learning model (serialized)  
-└── data/                # Dataset folder (not included in this repository)  
-    ├── train.csv         # Training dataset  
-    └── test.csv          # Testing dataset
+- test1.ipynb          # Jupyter Notebook for data preprocessing, training, and evaluation  
+- testing_deploy.py    # Flask API script for model deployment  
+- gbr_model.joblib     # Trained machine learning model (serialized)  
+- data.json          # Sample data for testing the API
+- data/                # Dataset folder
 
 ## Technologies
 - Python 3.x
@@ -18,8 +17,8 @@ The model used in this project is a Gradient Boosting Regressor, exported with j
 
 ## Jupyter Notebook
 The notebook test1.ipynb includes:
-    - Data loading and preprocessing
-    - Exploratory Data Analysis (EDA)
-    - Training a Gradient Boosting Regressor
-    - Model evaluation
-    - Exporting the model to gbr_model.joblib
+- Data loading and preprocessing
+- Exploratory Data Analysis (EDA)
+- Training a Gradient Boosting Regressor
+- Model evaluation
+- Exporting the model to gbr_model.joblib
