@@ -1,37 +1,25 @@
-🚀 Machine Learning Deployment with Flask
+# Machine Learning Model Deployment with Flask
+This project demonstrates how to build, train, and deploy a Machine Learning model using Flask as a REST API service.
+The model used in this project is a Gradient Boosting Regressor, exported with joblib for deployment.
 
-Project ini berisi implementasi machine learning dengan pipeline training model (dalam Jupyter Notebook) dan deployment API menggunakan Flask.
+## Project Structure
+├── test1.ipynb          # Jupyter Notebook for data preprocessing, training, and evaluation  
+├── testing_deploy.py    # Flask API script for model deployment  
+├── gbr_model.joblib     # Trained machine learning model (serialized)  
+└── data/                # Dataset folder (not included in this repository)  
+    ├── train.csv         # Training dataset  
+    └── test.csv          # Testing dataset
 
-📂 Struktur Project
+## Technologies
+- Python 3.x
+- Pandas, NumPy, Scikit-learn
+- Joblib
+- Flask
 
-test1.ipynb → Notebook berisi data preprocessing, training model, dan evaluasi.
-
-testing_deploy.py → Script Flask untuk deployment model.
-
-gbr_model.joblib → Model yang sudah dilatih (disimpan dengan joblib).
-
-data/ → Folder berisi dataset (tidak diunggah di repo ini).
-
-⚙️ Teknologi yang Digunakan
-
-Python 3.x
-
-Pandas, NumPy, Scikit-learn (untuk preprocessing & training model)
-
-Joblib (untuk menyimpan model)
-
-Flask (untuk membuat REST API)
-
-📊 Notebook Training Model
-
-File test1.ipynb berisi:
-
-Data loading & preprocessing
-
-Exploratory Data Analysis (EDA)
-
-Training model (Gradient Boosting Regressor)
-
-Evaluasi model
-
-Export model ke gbr_model.joblib
+## Jupyter Notebook
+The notebook test1.ipynb includes:
+    - Data loading and preprocessing
+    - Exploratory Data Analysis (EDA)
+    - Training a Gradient Boosting Regressor
+    - Model evaluation
+    - Exporting the model to gbr_model.joblib
